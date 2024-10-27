@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Semáforo manual</title>
+    <style>
+        body {
+            background-image: url('imagens/estrada3.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        div {
+            width: 130px;
+            height: 230px;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: 35px;
+            float: right;
+        }
+
+        button {
+            color: white;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            border-radius: 15px;
+           
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="semaforo" src="imagens/semaforos-removebg-preview-vermelho.png"
+        style="width:100px;height: 230px;float: left;margin-right: 300px;float: right;"></img>
+
+    <div>
+        <button onclick="document.getElementById('semaforo').src=' imagens/semaforos-removebg-preview-vermelho.png'"
+            style="background-color:#fa1a1a;border-color:#fa1a1a ;">Acender vermelho</button>
+        <button onclick="document.getElementById('semaforo').src ='imagens/semaforos-removebg-preview-amarelo.png'"
+            style=" background-color:#ffd100; border-color:#ffd100 ;">Acender amarelo</button>
+        <button onclick="document.getElementById('semaforo').src='imagens/semaforos-removebg-preview-verde.png'"
+            style="background-color: #6fd07d;border-color:#6fd07d ;">Acender verde</button>
+    </div>
+</body>
+
+</html>
